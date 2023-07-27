@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cute Ebook Store</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Add the following style for the horizontal scroll view */
+    .categories-scroll {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    /* Adjust the category button styles for better spacing */
+    .category-btn {
+      background-color: #ff6b6b;
+      color: #fff;
+      border: none;
+      padding: 8px 12px; /* Adjusted padding for better button size */
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      min-width: 100px; /* Set a minimum width for each button to avoid crowding */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cute Ebook Store</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search ebooks...">
+    </div>
+    <!-- Horizontal scroll view for categories -->
+    <div class="categories-scroll">
+      <button class="category-btn" onclick="filterByCategory('All')">All</button>
+      <button class="category-btn" onclick="filterByCategory('DSA')">DSA</button>
+      <button class="category-btn" onclick="filterByCategory('CTE')">CTE</button>
+      <button class="category-btn" onclick="filterByCategory('Physics')">Physics</button>
+
+
+
+   <button class="category-btn" onclick="filterByCategory('All')">All</button>
+      <button class="category-btn" onclick="filterByCategory('DSA')">DSA</button>
+      <button class="category-btn" onclick="filterByCategory('CTE')">CTE</button>
+      <button class="category-btn" onclick="filterByCategory('Physics')">Physics</button>   <button class="category-btn" onclick="filterByCategory('All')">All</button>
+      <button class="category-btn" onclick="filterByCategory('DSA')">DSA</button>
+      <button class="category-btn" onclick="filterByCategory('CTE')">CTE</button>
+      <button class="category-btn" onclick="filterByCategory('Physics')">Physics</button>
+      <!-- Add more category buttons as needed -->
+    </div>
+    <div class="ebook-grid" id="ebook-grid">
+      <!-- Ebook data will be dynamically added here -->
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modal-name"></h2>
+      <p><strong>Category:</strong> <span id="modal-category"></span></p>
+      <p><strong>Description:</strong> <span id="modal-description"></span></p>
+      <p><strong>Availability:</strong> <span id="modal-availability"></span></p>
+      <a href="#" id="modal-link" target="_blank">View</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

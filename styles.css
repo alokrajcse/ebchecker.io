@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ff6b6b;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Add the following styles for the horizontal scroll view */
+.categories-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Adjust the category button styles for better spacing */
+.category-btn {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 8px 12px; /* Adjusted padding for better button size */
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 100px; /* Set a minimum width for each button to avoid crowding */
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.ebook-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.ebook-card {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.ebook-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.ebook-card h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.ebook-card:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff6b6b;
+}
+
+
+
+/* Add the following style for the horizontal scroll view */
+.categories-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+}
+
+/* Hide the scrollbar in webkit-based browsers */
+.categories-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Adjust the category button styles for better spacing */
+.category-btn {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 8px 12px; /* Adjusted padding for better button size */
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 100px; /* Set a minimum width for each button to avoid crowding */
+}
+
+
+/* Add the following styles for the fixed horizontal scroll view */
+.categories-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Set the background color to match the container background */
+  z-index: 1; /* Set a higher z-index to ensure it's above other content */
+  padding: 10px 0; /* Optional padding to give some spacing between the scroll view and other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional box-shadow for a subtle effect */
+}
+
+/* Hide the scrollbar in webkit-based browsers */
+.categories-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Adjust the category button styles for better spacing */
+.category-btn {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 8px 12px; /* Adjusted padding for better button size */
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 100px; /* Set a minimum width for each button to avoid crowding */
+}

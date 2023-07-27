@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Panel</h1>
+    <h2>Add Product</h2>
+    <form id="addProductForm">
+      <label for="productName">Product Name:</label>
+      <input type="text" id="productName" required>
+      <label for="productCategory">Product Category:</label>
+      <input type="text" id="productCategory" required>
+      <label for="productDescription">Product Description:</label>
+      <textarea id="productDescription" required></textarea>
+      <label for="productAvailability">Availability:</label>
+      <input type="text" id="productAvailability" required>
+      <label for="productThumbnail">Thumbnail URL:</label>
+      <input type="text" id="productThumbnail" required>
+      <label for="productLink">Product Link:</label>
+      <input type="text" id="productLink" required>
+      <button type="submit">Add Product</button>
+    </form>
+
+    <h2>Remove Product</h2>
+    <div class="product-list" id="productList">
+      <!-- Product data will be dynamically added here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
